@@ -338,3 +338,34 @@
 
     }
 }
+
+//user reviews
+.review {
+    background-color:#fff;
+    padding: 3rem;
+    box-shadow: var(--shadow-light);
+    margin-bottom: 3rem;
+    &__text{
+
+    }
+    &__user{
+
+    }
+    &__photo {
+        height: 4.5rem;
+        width: 4.5rem;
+        border-radius: 50%;
+    }
+    &__user-box {
+
+    }
+    &__user-name{
+
+    }
+    &__user-date{
+
+    }
+    &__rating{
+
+    }
+}
