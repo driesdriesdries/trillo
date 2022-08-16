@@ -178,9 +178,7 @@
 //Gallery
 .gallery {
     display: flex;
-    &__item{
 
-    }
     &__photo {
         width: 100%;
         display: block;
@@ -190,8 +188,9 @@
 //overview
 .overview {
     display: flex;
-    border-bottom: 1px solid var(--color-grey-light-2);
+    border-bottom: var(--line);
     align-items: center;
+    background-color: #fff;
     
     &__heading {
         font-size: 2.25rem;
