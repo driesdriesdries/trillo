@@ -113,13 +113,25 @@
     font-size: 1.4rem;
     list-style-type: none;
     margin-top: 3.5rem;
+    @media only screen and (max-width: $bp-medium) {
+        display: flex;
+        margin: 0;
+        //align-items: stretch;
+    }
     
     
     &__item {
         position: relative;
 
         &:not(:last-child) {
-            margin-bottom: .5rem;    
+            margin-bottom: .5rem;
+            @media only screen and (max-width: $bp-medium) {
+                margin-bottom: 0;
+            }    
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            flex-grow: 1;
         }
     }
 
@@ -158,6 +170,12 @@
         align-items: center;   
         position: relative;
         z-index: 10; 
+        @media only screen and (max-width: $bp-medium) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
     }
     &__icon {
         width: 1.75rem;
@@ -173,6 +191,9 @@
     text-align: center;
     padding: 2.5rem;
     color: var(--color-grey-light-4);
+    @media only screen and (max-width: $bp-medium) {
+        display: none;
+    }
 }
 
 //Gallery
@@ -344,7 +365,7 @@
         margin-right: auto;
     }
     &__friends {
-
+        display: flex;
     }
 }
 
@@ -358,6 +379,10 @@
     flex-direction: column;
     position: relative;
     overflow: hidden;
+    @media only screen and (max-width: $bp-medium) {
+        padding: 3rem;
+        margin-bottom: 0;
+    }
 
     &__text{
         position: relative;
@@ -411,6 +436,10 @@
     padding: 3.5rem;
     text-align: center;
     background-color: #fff;
+    
+    @media only screen and (max-width: $bp-medium) {
+        padding: 2rem 0;
+    }
     
     &__book-now {
         text-transform: uppercase;
